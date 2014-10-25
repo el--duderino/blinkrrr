@@ -11,6 +11,4 @@ twit.stream('user', {track:'prufrock123'}, function(stream) {
     stream.on('data', function(data) {
         console.log(util.inspect(data));
     });
-    // Disconnect stream after five seconds
-//    setTimeout(stream.destroy, 5000);
 });
